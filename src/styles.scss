@@ -1,0 +1,45 @@
+body {
+  padding: 50px 0 20px 0;
+}
+
+.content {
+    // margin-top: 20px;
+}
+
+.profile {
+    p, img {
+        margin: 10px;
+    }
+}
+
+.poll-form {
+    input[type=button], input[type=submit] {
+        margin: 0 10px;
+    }
+}
+
+
+.navbar-right>li:last-of-type {
+    margin-right: 15px;
+}
+
+.btn-social {
+    padding: 6px 12px 6px 44px !important;
+    margin: 8px 0;
+    color: white;
+}
+
+.btn-facebook {
+    
+    color: white !important;
+
+    &:hover {
+        color: white !important;
+        background-color: #2d4373 !important;
+    }
+    
+}
+
+.share-button-facebook {
+    margin: auto;
+}

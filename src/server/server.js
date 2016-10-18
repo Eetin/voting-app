@@ -22,7 +22,6 @@ app.use(compression());
 
 if (process.env.NODE_ENV === 'production') {
   app.use(historyApiFallback({
-    index: './build/index.html',
     rewrites: [
       {
         from: /^\/(?:(?:auth)|(?:api)|(?:public-api))\/.*$/,
@@ -33,6 +32,7 @@ if (process.env.NODE_ENV === 'production') {
     ],
     verbose: false
   }));
+  app.use(express.static(__dirname + '/../../build'));
 } else {
   app.use(historyApiFallback({
     rewrites: [
